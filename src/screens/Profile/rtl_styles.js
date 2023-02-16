@@ -1,0 +1,356 @@
+
+import {StyleSheet, I18nManager} from 'react-native';
+import R from '../../resources/R';
+
+
+const Styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: R.colors.white,
+    position:'relative',
+  },
+  textContainer: {
+    marginTop: 20,
+    marginHorizontal: 20,
+  },
+  coloumncontainer: {
+    flexDirection: 'row-reverse',
+    paddingBottom: 10,
+  },
+ 
+  coloumncontainers: {
+    flexDirection: 'column',
+    padding: 20,
+    marginRight:10,
+  },
+
+  item :{
+    flex: 0.5, 
+     width: '50%',
+    padding: 0,
+  },
+  headingSubTittle: {
+    fontSize: 18,
+    color: R.colors.gold,
+    fontFamily: 'SemplicitaPro-Bold',
+    textAlign: 'right',
+    marginTop:-5,
+    marginLeft: 5,
+    marginLeft: Platform.OS == 'ios' ? 50 : 0,
+   
+  },
+ 
+  mandatoryLbl: {
+    fontSize:13,
+    color: R.colors.red,
+    textAlign: 'left',
+    marginBottom: 5,
+    alignItems: 'flex-start',
+  },
+  mandatory: {
+    color: R.colors.red,
+    fontSize:13,
+  },
+  bodytext: {
+    fontSize: 12,
+    color: R.colors.lightgray,
+    fontFamily: 'SemplicitaPro-Regular',
+  },
+  
+  textStyle: {
+    color: R.colors.white,
+  },
+  textStyleB: {
+    color: R.colors.white,
+    fontFamily: 'SemplicitaPro-Bold',
+    fontSize:16,
+  },
+ 
+  blueBkg: {
+    backgroundColor: R.colors.blue,
+    padding:10,
+    width: '104%',
+    marginTop:1,
+    paddingRight:20,
+    borderBottomStartRadius:15,
+    elevation:5,
+    marginRight:-13,
+    paddingBottom:15,
+    textAlign: 'left',
+  },
+  blueBkgInverted: {
+    backgroundColor: R.colors.blue,
+    padding:12,
+    width:10,
+    right:16,
+    top:Platform.OS == 'android' ? 64 : 60,
+    position:'absolute',
+    transform: [{rotate: '30deg'}],
+  },
+  subTitle: {
+    color:R.colors.white,
+    fontSize:18,
+    fontFamily: 'SemplicitaPro-Bold',
+    textAlign: 'right',
+  },
+  portlet: {
+    borderColor: '#e2e2e2',
+    borderWidth:1,
+    width:"100%",
+    padding:15,
+    borderTopWidth:0,
+    marginTop:-4,
+    elevation:0,
+    marginBottom:10,
+    backgroundColor:R.colors.white,
+    borderRadius:7,
+  
+  },
+  formLbl: {
+    color: R.colors.black,
+    fontFamily: 'SemplicitaPro-Regular',
+    fontSize: 16,
+    marginBottom:5,
+    fontWeight:'600',
+    textAlign: 'right',
+  },
+  formcont :{
+    display: 'flex',
+    flexDirection: 'row-reverse',
+  },
+
+  formLbll: {
+    color: R.colors.black,
+    fontFamily: 'SemplicitaPro-Medium',
+    fontSize: 16,
+    marginBottom:5,
+    fontWeight:'600',
+    width: '30%',
+    textAlign:'right',
+
+ 
+  },
+  formLblr: {
+    color: R.colors.blue,
+    fontFamily: 'SemplicitaPro-Medium',
+    fontSize: 16,
+    marginBottom:5,
+    fontWeight:'600',
+    width: '70%',
+    textAlign:'right',
+
+  },
+  formmt: {
+    marginTop:15,
+  },
+  
+ 
+  textInput: {
+    color: R.colors.lightgray,
+    fontSize: 12,
+    height: 40,
+    fontFamily: 'SemplicitaPro-Regular',
+    borderRadius: 5,
+    backgroundColor: '#F6F9FA',
+    borderColor: R.colors.mediumgray,
+    borderWidth: 1,
+    textAlign: 'right',
+    paddingLeft: 10,
+    paddingRight: 10,
+    justifyContent: 'center'
+  },
+  inputTexts: {
+    color: R.colors.lightgray,
+    fontSize: 12,
+    height: 40,
+    fontFamily: 'SemplicitaPro-Regular',
+    borderRadius: 5,
+    backgroundColor: '#F6F9FA',
+    borderColor: R.colors.mediumgray,
+    borderWidth: 1,
+    textAlign: I18nManager.isRTL ? 'right' : 'left',
+    height: 40,
+    justifyContent:'center'
+  },
+ 
+  marginBot: {
+    marginBottom:30,
+  },
+  subBtn: {
+    backgroundColor: R.colors.blue,
+    fontFamily: 'SemplicitaPro-Bold',
+    borderRadius: 5,
+    padding: 12,
+    marginEnd: 10,
+    alignItems: 'center',
+    marginTop:10,
+    flex:1,
+    alignSelf: 'flex-end'
+  },
+  subBtns: {
+    backgroundColor: R.colors.blue,
+    fontFamily: 'SemplicitaPro-Bold',
+    borderRadius: 5,
+    padding: 10,
+    marginEnd: 10,
+    marginTop:5,
+    marginBottom:1,
+    width:80,
+    alignItems: 'center',
+    
+  },
+  canBtn: {
+    backgroundColor: R.colors.darkgray,
+    fontFamily: 'SemplicitaPro-Bold',
+    borderRadius: 5,
+    padding: 10,
+    marginEnd: 10,
+    marginTop:5,
+    marginBottom:1,
+    width:80,
+    alignItems: 'center',
+  },
+  btncontainer: {
+    display:'flex',
+    flexDirection: 'row-reverse',
+    paddingTop: 15,
+    paddingLeft:0,
+  },
+  headingModalContainers: {
+    flexDirection: 'row-reverse',
+    marginRight:-5,
+  },
+  
+  modalView: {
+    margin: 10,
+    marginTop:50,
+    backgroundColor: "white",
+    borderRadius: 0,
+    padding: 5,
+    paddingBottom:17,
+    display: 'flex',
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5
+  },
+  button: {
+    borderRadius: 5,
+    padding: 10,
+    width: 80,
+    textAlign: 'center',
+    alignItems: 'center', 
+  },
+  buttonOpen: {
+    backgroundColor: R.colors.blue,
+  },
+  buttonClose: {
+    backgroundColor: R.colors.darkgray,
+    padding: 10,
+    color: R.colors.white,
+    borderRadius:5,
+    fontSize:14,
+    marginTop:10,
+    paddingLeft:7,
+    paddingRight:7,
+    fontFamily: 'SemplicitaPro-Bold',
+  },
+  buttonCloseb: {
+    backgroundColor: R.colors.blue,
+    fontFamily: 'SemplicitaPro-Bold',
+  },
+ 
+  modalText: {
+    marginBottom: 15,
+    textAlign: 'left',
+  },
+  headingModalContainer: {
+    textAlign: 'left',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    alignSelf: 'flex-start',
+    padding:7,
+  },
+  headingModalContainers: {
+    flexDirection: 'row-reverse',
+    marginRight:-5,
+  },
+  headingModal: {
+    fontSize: 16,
+    color: R.colors.white,
+    fontFamily: 'SemplicitaPro-Bold',
+  },
+  modalbg: {
+    backgroundColor: R.colors.blue,
+    padding: 2,
+    paddingEnd: 10,
+    paddingTop:5,
+    paddingLeft:10,
+    marginBottom:10,
+    width:'103%',
+    marginLeft:-5,
+    marginTop:-5,
+  },
+  headingBtn: {
+    position:'absolute',
+    right: 10,
+    top: 10,
+  },
+  
+  formcontainer: {
+    padding:10,
+    
+  },
+  
+  
+  modalBtn: {
+    backgroundColor: R.colors.blue,
+    padding: 10,
+    color: R.colors.white,
+    borderRadius:5,
+    fontSize:14,
+    marginTop:10,
+    paddingLeft:7,
+    paddingRight:7,
+    fontFamily: 'SemplicitaPro-Bold',
+    marginLeft:10,
+  },
+  centeredView: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.2)',
+  },
+  
+  loadercontainer :{
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#ffffff',
+    flexDirection: 'column',
+  },
+  tokenBal: {
+    color: R.colors.gold,
+    fontFamily: 'SemplicitaPro-Bold',
+    fontSize: 16,
+    textAlign:'right',
+  },
+  prevlnk: {
+    height: 17,
+    width: 17,
+    resizeMode: 'contain',
+    transform: [{scaleX: -1}]
+  },
+  pswdicon: {
+    justifyContent: 'flex-end',
+    paddingBottom: 5,
+    position: 'absolute',
+    left: 10,
+    bottom: 0,
+  },
+  headerTxt : {flexDirection:"row-reverse",alignItems : "center"},
+
+});
+export default Styles;
